@@ -61,7 +61,7 @@ def generate_launch_description():
             name='dbscan_node',
             output='screen',
             parameters=[{
-                'use_sim_time':          True,
+                'use_sim_time':          False,
                 'eps':                   LaunchConfiguration('eps'),
                 'min_samples':           LaunchConfiguration('min_samples'),
                 'min_cluster_size':      LaunchConfiguration('min_cluster_size'),
