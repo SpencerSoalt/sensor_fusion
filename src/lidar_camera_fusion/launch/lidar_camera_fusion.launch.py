@@ -32,7 +32,7 @@ def generate_launch_description():
             name='lidar_camera_fusion',
             output='screen',
             parameters=[{
-                'use_sim_time':     True,
+                'use_sim_time':     False,
                 'calibration_file': LaunchConfiguration('calibration_file'),
                 'max_distance':     LaunchConfiguration('max_distance'),
                 'min_distance':     LaunchConfiguration('min_distance'),
