@@ -58,7 +58,7 @@ COPY src ${WS}/src/
 RUN rosdep init 2>/dev/null || true && \
     rosdep update && \
     source /opt/ros/humble/setup.bash && \
-    rosdep install --from-paths src --ignore-src -r -y
+    rosdep install --from-paths src --ignore-src -r -y --skip-keys "ament_python"
 
 #  Build 
 RUN source /opt/ros/humble/setup.bash && \
