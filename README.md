@@ -10,8 +10,8 @@ Two ROS 2 (Humble) packages for LiDAR-camera fusion and 3D object detection.
 ### Data Flow
 
 ```
-LiDAR /velodyne_points ──┐
-                         ├──► lidar_camera_fusion ──► /fused/cloud_in_boxes ──► dbscan_clustering ──► /detections_3d
+LiDAR /velodyne_points  ──┐
+                          ├──► lidar_camera_fusion ──► /fused/cloud_in_boxes ──► dbscan_clustering ──► /detections_3d
 Camera /camera/detections ┘
 ```
 
